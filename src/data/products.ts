@@ -28,10 +28,10 @@ export const productsData: Product[] = [
   {
     id: 'prod-duo-offwhite',
     slug: 'bolsa-perola-duo',
-    name: 'Bolsa Pérola Duo',
+    name: 'Bolsa Média Off-White',
     subtitle: 'Alça de ombro em crochê + corrente prateada e tassel lateral',
     description:
-      'Versátil, luminosa e sofisticada. A Bolsa Pérola Duo em tom Off-White combina a delicadeza da alça de ombro trabalhada artesanalmente em crochê com uma corrente prateada alongada, permitindo diferentes formas de uso. Acompanha tassel lateral e plaquinha metálica discreta.',
+      'Versátil, luminosa e sofisticada. A Bolsa Média Duo em tom Off-White combina a delicadeza da alça de ombro trabalhada artesanalmente em crochê com uma corrente prateada alongada, permitindo diferentes formas de uso. Acompanha tassel lateral e plaquinha metálica discreta.',
     craftsmanshipDetails: [
       'Trama estruturada feita 100% à mão com pontos uniformes',
       'Dupla opção de uso: alça de ombro em crochê + alça de corrente prateada',
@@ -44,8 +44,8 @@ export const productsData: Product[] = [
     gallery: [
       {
         url: 'images/products/bolsa-duo-offwhite.jpg',
-        alt: 'Bolsa Pérola Duo em crochê off-white com alça de corrente e tassel',
-        caption: 'Bolsa Pérola Duo em Off-White Natural com corrente e tassel',
+        alt: 'Bolsa Média Duo em crochê off-white com alça de corrente e tassel',
+        caption: 'Bolsa Média Duo em Off-White Natural com corrente e tassel',
       },
       {
         url: 'images/products/bolsa-tassel-preta.jpg',
@@ -92,7 +92,7 @@ export const productsData: Product[] = [
         options: ['Com tassel artesanal removível', 'Sem tassel (minimalista)'],
       },
     ],
-    availability: 'pronta-entrega',
+    availability: 'sob-encomenda',
     price: 189.0,
     stockQuantity: 2,
     featured: true,
@@ -157,7 +157,7 @@ export const productsData: Product[] = [
         options: ['Botão magnético embutido', 'Com forro interno de algodão', 'Trama original sem forro'],
       },
     ],
-    availability: 'pronta-entrega',
+    availability: 'sob-encomenda',
     price: 219.0,
     stockQuantity: 2,
     featured: true,
@@ -225,7 +225,7 @@ export const productsData: Product[] = [
         options: ['Com tassel lateral (Como na foto)', 'Sem tassel'],
       },
     ],
-    availability: 'pronta-entrega',
+    availability: 'sob-encomenda',
     price: 179.0,
     stockQuantity: 3,
     featured: true,
@@ -296,7 +296,7 @@ export const productsData: Product[] = [
         options: ['Prateado (Padrão da foto)', 'Dourado'],
       },
     ],
-    availability: 'pronta-entrega',
+    availability: 'sob-encomenda',
     price: 179.0,
     stockQuantity: 2,
     featured: false,
@@ -305,11 +305,11 @@ export const productsData: Product[] = [
 
   {
     id: 'prod-franja-vermelha',
-    slug: 'bolsa-carmim-franjas',
-    name: 'Bolsa Carmim Boho',
+    slug: 'bolsa-vermelha-franjas',
+    name: 'Bolsa vermelha Boho',
     subtitle: 'Modelo especial com franjas laterais e alça longa em crochê',
     description:
-      'Cheia de personalidade e delicadeza artesanal, a Bolsa Carmim Boho destaca-se pelas franjas laterais duplas e pela trama horizontal marcada. Uma peça autoral feita sob encomenda para mulheres que desejam um ponto de cor elegante ou que preferem personalizá-la em tons neutros.',
+      'Cheia de personalidade e delicadeza artesanal, a Bolsa vermelha Boho destaca-se pelas franjas laterais duplas e pela trama horizontal marcada. Uma peça autoral feita sob encomenda para mulheres que desejam um ponto de cor elegante ou que preferem personalizá-la em tons neutros.',
     craftsmanshipDetails: [
       'Acabamento lateral exclusivo com franjas em fio macio',
       'Trama estruturada com relevo horizontal linear',
@@ -323,23 +323,23 @@ export const productsData: Product[] = [
       {
         url: 'images/products/bolsa-franja-vermelha.jpg',
         alt: 'Bolsa de crochê vermelha com franjas laterais e alça longa',
-        caption: 'Bolsa Carmim Boho com franjas laterais artesanais',
+        caption: 'Bolsa vermelha Boho com franjas laterais artesanais',
       },
     ],
     models: [
       {
-        id: 'carmim-padrao',
+        id: 'vermelha-padrao',
         name: 'Tamanho Clássico com Franjas',
         dimensions: '24 cm (largura) × 17 cm (altura) × 5 cm (profundidade)',
       },
       {
-        id: 'carmim-sem-franja',
+        id: 'vermelha-sem-franja',
         name: 'Versão Lisa (Sem Franjas Laterais)',
         dimensions: '24 cm (largura) × 17 cm (altura) × 5 cm (profundidade)',
       },
     ],
     colors: [
-      { id: 'vermelho-carmim', name: 'Vermelho Carmim (Foto)', hex: '#C81D25' },
+      { id: 'vermelho-Vermelha', name: 'Vermelho Vermelha (Foto)', hex: '#C81D25' },
       { id: 'verde-oliva', name: 'Verde Oliva', hex: '#4A5739' },
       { id: 'off-white', name: 'Off-White Natural', hex: '#F3EFE6' },
       { id: 'areia', name: 'Bege Aveia', hex: '#C6A988' },
@@ -364,7 +364,7 @@ export const productsData: Product[] = [
         options: ['Alça transversal padrão', 'Alça maior', 'Alça curta de ombro'],
       },
     ],
-    availability: 'sob-encomenda',
+    availability: 'pronta-entrega',
     featured: true,
     active: true,
   },
@@ -436,7 +436,7 @@ export const productsData: Product[] = [
         options: ['Com tassel lateral removível (Como na foto)', 'Sem tassel'],
       },
     ],
-    availability: 'pronta-entrega',
+    availability: 'sob-encomenda',
     price: 249.0,
     stockQuantity: 2,
     featured: true,
@@ -511,7 +511,7 @@ export const productsData: Product[] = [
         options: ['Com tassel longo artesanal (Como na foto)', 'Sem tassel'],
       },
     ],
-    availability: 'pronta-entrega',
+    availability: 'sob-encomenda',
     price: 229.0,
     stockQuantity: 2,
     featured: true,
