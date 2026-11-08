@@ -60,15 +60,15 @@ export const AboutPage: React.FC = () => {
         <div className="lg:col-span-6 grid grid-cols-2 gap-4">
           <div className="space-y-4">
             <img
-              src="images/products/bolsa-olivia.jpg"
-              alt="Bolsa Olívia produzida artesanalmente pela Rosana&Co"
+              src="images/products/bolsa-duo-offwhite.jpg"
+              alt="Bolsa Pérola Duo produzida artesanalmente pela Rosana&Co"
               className="rounded-3xl aspect-[4/5] object-cover w-full border border-sand-200 shadow-subtle"
             />
           </div>
           <div className="space-y-4 pt-8">
             <img
-              src="images/products/bolsa-aurora.jpg"
-              alt="Detalhe dos pontos artesanais da Bolsa Aurora"
+              src="images/products/bolsa-ombro-areia.jpg"
+              alt="Detalhe dos pontos artesanais da Bolsa Hobo Areia"
               className="rounded-3xl aspect-[4/5] object-cover w-full border border-sand-200 shadow-subtle"
             />
           </div>

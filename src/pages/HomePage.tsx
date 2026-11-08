@@ -29,24 +29,24 @@ export const HomePage: React.FC = () => {
 
   const instagramGallery = [
     {
-      src: 'images/products/bolsa-olivia.jpg',
-      alt: 'Bolsa Olívia em crochê verde oliva',
-      caption: 'Trama estruturada em Verde Oliva',
+      src: 'images/products/bolsa-duo-offwhite.jpg',
+      alt: 'Bolsa Pérola Duo em crochê off-white com corrente',
+      caption: 'Bolsa Pérola Duo em Off-White',
     },
     {
-      src: 'images/products/bolsa-aurora.jpg',
-      alt: 'Bolsa Aurora de mão em bege areia',
-      caption: 'Delicadeza nos detalhes de mão',
+      src: 'images/products/bolsa-ombro-areia.jpg',
+      alt: 'Bolsa Hobo Areia Natural de ombro',
+      caption: 'Conforto e leveza em Bege Aveia',
     },
     {
-      src: 'images/products/bolsa-serena.jpg',
-      alt: 'Bolsa Serena transversal em off-white',
-      caption: 'Leveza para todos os momentos',
+      src: 'images/products/bolsa-aba-malva.jpg',
+      alt: 'Bolsa Satchel Rosê Malva com aba canelada',
+      caption: 'Aba texturizada em Rosê Malva',
     },
     {
-      src: 'images/products/bolsa-flora.jpg',
-      alt: 'Bolsa Flora Atelier edição especial',
-      caption: 'Texturas botânicas feitas à mão',
+      src: 'images/products/mochila-preta.jpg',
+      alt: 'Mochila & Bolsa Conversível Ébano',
+      caption: 'Mochila Conversível 2 em 1',
     },
   ];
 
@@ -292,7 +292,7 @@ export const HomePage: React.FC = () => {
             <div className="lg:col-span-5 h-full bg-olive-900/40 p-6 sm:p-8 grid grid-cols-2 gap-4">
               <div className="space-y-4">
                 <img
-                  src="images/products/bolsa-celeste.jpg"
+                  src="images/products/bolsa-tassel-terracota.jpg"
                   alt="Personalização de bolsas em tons terrosos e areia"
                   className="rounded-2xl aspect-[4/5] object-cover w-full border border-ivory-50/15"
                 />
@@ -300,19 +300,19 @@ export const HomePage: React.FC = () => {
                   <span className="font-serif text-base font-medium text-white block">
                     Cartela Exclusiva
                   </span>
-                  Verde oliva, areia, marfim, amêndoa, sálvia e cacau.
+                  Off-white, areia, terracota, verde oliva, preto ébano e carmim.
                 </div>
               </div>
               <div className="space-y-4 pt-6">
                 <div className="p-3.5 rounded-xl bg-olive-900/70 border border-olive-700 text-xs text-ivory-100">
                   <span className="font-serif text-base font-medium text-white block">
-                    Alças &amp; Ferragens
+                    Alças &amp; Detalhes
                   </span>
-                  Escolha comprimentos de alça, forros e acabamentos.
+                  Escolha comprimentos de alça, correntes, tassel ou franjas.
                 </div>
                 <img
-                  src="images/products/bolsa-flora.jpg"
-                  alt="Bolsa personalizada com textura botânica"
+                  src="images/products/bolsa-franja-vermelha.jpg"
+                  alt="Bolsa personalizada com franjas laterais"
                   className="rounded-2xl aspect-[4/5] object-cover w-full border border-ivory-50/15"
                 />
               </div>
@@ -381,7 +381,7 @@ export const HomePage: React.FC = () => {
             <div className="lg:col-span-5">
               <div className="rounded-2xl overflow-hidden border border-sand-200 bg-white p-2.5 shadow-subtle">
                 <img
-                  src="images/products/bolsa-aurora.jpg"
+                  src="images/products/bolsa-ombro-areia.jpg"
                   alt="Detalhe do acabamento artesanal da Rosana&Co"
                   className="w-full aspect-[4/4] object-cover rounded-xl"
                 />

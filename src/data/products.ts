@@ -15,6 +15,8 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
 /**
  * ARQUIVO CENTRALIZADO DE PRODUTOS — ROSANA&CO
  * ---------------------------------------------
+ * Catálogo oficial atualizado com as fotografias reais das bolsas da Rosana&Co.
+ *
  * Como gerenciar o catálogo:
  * 1. Para adicionar uma nova bolsa, copie um dos blocos abaixo e altere os dados.
  * 2. Para mudar entre Pronta Entrega e Sob Encomenda:
@@ -24,390 +26,607 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
  */
 export const productsData: Product[] = [
   {
-    id: 'prod-olivia',
-    slug: 'bolsa-olivia',
-    name: 'Bolsa Olívia',
-    subtitle: 'Trama estruturada de ombro com argolas acetinadas',
+    id: 'prod-duo-offwhite',
+    slug: 'bolsa-perola-duo',
+    name: 'Bolsa Pérola Duo',
+    subtitle: 'Alça de ombro em crochê + corrente prateada e tassel lateral',
     description:
-      'A Bolsa Olívia traduz a essência da Rosana&Co. Tecida manualmente com ponto estruturado de alta densidade, apresenta silhueta elegante para o dia a dia ou ocasiões especiais, com alça confortável de ombro e acabamento impecável.',
+      'Versátil, luminosa e sofisticada. A Bolsa Pérola Duo em tom Off-White combina a delicadeza da alça de ombro trabalhada artesanalmente em crochê com uma corrente prateada alongada, permitindo diferentes formas de uso. Acompanha tassel lateral e plaquinha metálica discreta.',
     craftsmanshipDetails: [
-      'Fio náutico/algodão premium de toque macio e estrutura firme',
-      'Fechamento magnético embutido com acabamento discreto',
-      'Ferragens em banho dourado acetinado',
-      'Produzida 100% à mão no ateliê Rosana&Co',
+      'Trama estruturada feita 100% à mão com pontos uniformes',
+      'Dupla opção de uso: alça de ombro em crochê + alça de corrente prateada',
+      'Acompanha pingente tassel artesanal em tom off-white com argola mosquetão',
+      'Aplicação de plaquinha metálica prateada frontal',
     ],
     category: 'Bolsas de ombro',
-    additionalCategories: ['Modelos especiais'],
-    mainImage: 'images/products/bolsa-olivia.jpg',
+    additionalCategories: ['Bolsas transversais', 'Bolsas pequenas', 'Modelos especiais'],
+    mainImage: 'images/products/bolsa-duo-offwhite.jpg',
     gallery: [
       {
-        url: 'images/products/bolsa-olivia.jpg',
-        alt: 'Bolsa Olívia em crochê artesanal verde oliva — vista frontal',
-        caption: 'Acabamento em verde oliva com argolas douradas acetinadas',
+        url: 'images/products/bolsa-duo-offwhite.jpg',
+        alt: 'Bolsa Pérola Duo em crochê off-white com alça de corrente e tassel',
+        caption: 'Bolsa Pérola Duo em Off-White Natural com corrente e tassel',
       },
       {
-        url: 'images/products/hero-banner.jpg',
-        alt: 'Bolsa Olívia em composição de luz natural no ateliê',
-        caption: 'Detalhe da trama artesanal sob luz natural',
+        url: 'images/products/bolsa-tassel-preta.jpg',
+        alt: 'Variação da linha com tassel no tom Preto Ébano',
+        caption: 'Também disponível em outras cores da cartela',
       },
     ],
     models: [
       {
-        id: 'olivia-media',
-        name: 'Tamanho Clássico (Médio)',
-        dimensions: '28 cm (largura) × 20 cm (altura) × 9 cm (profundidade)',
-        description: 'Comporta celular, carteira, óculos e necessaire compacta.',
+        id: 'perola-padrao',
+        name: 'Modelo Clássico Duo (Ombro + Corrente)',
+        dimensions: '24 cm (largura) × 16 cm (altura) × 5 cm (profundidade)',
+        description: 'Ideal para celular, documentos, chaves, batom e carteira compacta.',
       },
       {
-        id: 'olivia-compacta',
-        name: 'Tamanho Compacto',
-        dimensions: '23 cm (largura) × 16 cm (altura) × 7 cm (profundidade)',
-        description: 'Versão delicada para eventos e passeios leves.',
+        id: 'perola-media',
+        name: 'Tamanho Médio',
+        dimensions: '27 cm (largura) × 19 cm (altura) × 7 cm (profundidade)',
+        description: 'Versão com espaço extra para óculos de sol e necessaire pequena.',
       },
     ],
     colors: [
-      { id: 'verde-oliva', name: 'Verde Oliva', hex: '#4A5739', availableForImmediateDelivery: true },
       { id: 'off-white', name: 'Off-White Natural', hex: '#F3EFE6', availableForImmediateDelivery: true },
-      { id: 'areia', name: 'Bege Areia', hex: '#D4C3AA', availableForImmediateDelivery: false },
-    ],
-    customizations: [
-      {
-        id: 'acabamento-ferragem',
-        label: 'Acabamento dos Metais',
-        required: true,
-        options: ['Dourado Acetinado (Padrão)', 'Níquel Prateado', 'Sem metais aparentes (Alça 100% crochê)'],
-      },
-      {
-        id: 'forro-interno',
-        label: 'Forro Interno em Algodão Cru',
-        required: true,
-        options: ['Com forro interno', 'Sem forro (trama fechada original)'],
-      },
-    ],
-    availability: 'pronta-entrega',
-    price: 289.0,
-    stockQuantity: 3,
-    featured: true,
-    active: true,
-  },
-
-  {
-    id: 'prod-aurora',
-    slug: 'bolsa-aurora',
-    name: 'Bolsa Aurora',
-    subtitle: 'Modelo de mão escultural em tons naturais',
-    description:
-      'Delicada e sofisticada, a Bolsa Aurora destaca o contraste suave entre o crochê artesanal em tom areia e a alça de mão estruturada. Ideal para compor produções elegantes, casamentos diurnos, jantares e encontros especiais.',
-    craftsmanshipDetails: [
-      'Ponto fantasia autoral com textura em relevo delicado',
-      'Alça de mão anatômica trabalhada artesanalmente',
-      'Base estruturada que mantém o formato da peça ao apoiar',
-      'Feita à mão com atenção a cada arremate',
-    ],
-    category: 'Bolsas de mão',
-    additionalCategories: ['Bolsas pequenas', 'Modelos especiais'],
-    mainImage: 'images/products/bolsa-aurora.jpg',
-    gallery: [
-      {
-        url: 'images/products/bolsa-aurora.jpg',
-        alt: 'Bolsa Aurora de mão em crochê bege claro e marfim',
-        caption: 'Textura artesanal em tom areia natural',
-      },
-    ],
-    models: [
-      {
-        id: 'aurora-clutch-alca',
-        name: 'Modelo de Mão Estruturado',
-        dimensions: '24 cm (largura) × 17 cm (altura) × 8 cm (profundidade)',
-      },
-      {
-        id: 'aurora-com-corrente',
-        name: 'Com Alça Removível Adicional',
-        dimensions: '24 cm (largura) × 17 cm (altura) + alça removível de 110 cm',
-      },
-    ],
-    colors: [
-      { id: 'areia', name: 'Bege Areia', hex: '#D4C3AA', availableForImmediateDelivery: true },
-      { id: 'off-white', name: 'Off-White Marfim', hex: '#F5F1E8', availableForImmediateDelivery: true },
+      { id: 'preto', name: 'Preto Ébano', hex: '#1E1D1B', availableForImmediateDelivery: true },
+      { id: 'terracota', name: 'Terracota Amêndoa', hex: '#8D5841', availableForImmediateDelivery: true },
+      { id: 'areia', name: 'Bege Aveia', hex: '#C6A988', availableForImmediateDelivery: false },
       { id: 'verde-oliva', name: 'Verde Oliva', hex: '#4A5739', availableForImmediateDelivery: false },
-      { id: 'amendoa', name: 'Caramelo Amêndoa', hex: '#A67553', availableForImmediateDelivery: false },
     ],
     customizations: [
       {
-        id: 'tipo-alca',
-        label: 'Detalhe da Alça',
+        id: 'config-alca',
+        label: 'Configuração de Alças',
         required: true,
-        options: ['Alça de mão em crochê estruturado', 'Alça de mão + corrente dourada removível', 'Alça com detalhe em madeira natural'],
+        options: [
+          'Dupla: Alça de ombro em crochê + Corrente prateada (Como na foto)',
+          'Apenas alça longa em crochê',
+          'Com corrente dourada',
+        ],
       },
       {
-        id: 'fecho',
-        label: 'Tipo de Fechamento',
+        id: 'detalhe-tassel',
+        label: 'Pingente Tassel Lateral',
         required: true,
-        options: ['Botão imantado invisível', 'Fecho em moldura retrô'],
+        options: ['Com tassel artesanal removível', 'Sem tassel (minimalista)'],
       },
     ],
     availability: 'pronta-entrega',
-    price: 259.0,
+    price: 189.0,
     stockQuantity: 2,
     featured: true,
     active: true,
   },
 
   {
-    id: 'prod-serena',
-    slug: 'bolsa-serena',
-    name: 'Bolsa Serena',
-    subtitle: 'Transversal leve e versátil para todos os momentos',
+    id: 'prod-ombro-areia',
+    slug: 'bolsa-natural-areia',
+    name: 'Bolsa Hobo Areia Natural',
+    subtitle: 'Bolsa de ombro espaçosa com alça contínua em crochê',
     description:
-      'Pensada para mulheres que valorizam praticidade sem abrir mão da sofisticação artesanal. A Bolsa Serena possui alça longa confortável para uso transversal ou tiracolo, mantendo seus itens essenciais sempre seguros e organizados.',
+      'Com design orgânico, minimalista e acolhedor, a Bolsa Hobo Areia Natural é perfeita para acompanhar a rotina com leveza e elegância. Sua alça integrada em crochê proporciona máximo conforto no ombro, enquanto sua trama encorpada acomoda todos os seus itens essenciais.',
     craftsmanshipDetails: [
-      'Design leve pensado para conforto prolongado no ombro',
-      'Trama fechada que protege o conteúdo interno',
-      'Alça longa com opção de regulagem sob medida',
-      'Acabamento suave que não marca roupas delicadas',
-    ],
-    category: 'Bolsas transversais',
-    additionalCategories: ['Bolsas pequenas'],
-    mainImage: 'images/products/bolsa-serena.jpg',
-    gallery: [
-      {
-        url: 'images/products/bolsa-serena.jpg',
-        alt: 'Bolsa Serena transversal em crochê off-white com corrente delicada',
-        caption: 'Versatilidade e leveza em off-white natural',
-      },
-    ],
-    models: [
-      {
-        id: 'serena-padrao',
-        name: 'Transversal Clássica',
-        dimensions: '21 cm (largura) × 15 cm (altura) × 6,5 cm (profundidade)',
-      },
-      {
-        id: 'serena-plus',
-        name: 'Transversal Média',
-        dimensions: '25 cm (largura) × 18 cm (altura) × 8 cm (profundidade)',
-      },
-    ],
-    colors: [
-      { id: 'off-white', name: 'Off-White Natural', hex: '#F3EFE6', availableForImmediateDelivery: true },
-      { id: 'verde-oliva', name: 'Verde Oliva', hex: '#4A5739', availableForImmediateDelivery: true },
-      { id: 'areia', name: 'Bege Areia', hex: '#D4C3AA', availableForImmediateDelivery: false },
-      { id: 'cacau', name: 'Marrom Cacau', hex: '#4E3B31', availableForImmediateDelivery: false },
-    ],
-    customizations: [
-      {
-        id: 'comprimento-alca',
-        label: 'Comprimento da Alça Transversal',
-        required: true,
-        options: ['Padrão (110 cm)', 'Alça menor (100 cm)', 'Alça maior (122 cm)', 'Alça mista (crochê + elo dourado)'],
-      },
-      {
-        id: 'tassel-pingente',
-        label: 'Pingente Artesanal (Tassel)',
-        required: false,
-        options: ['Sem pingente (minimalista)', 'Com tassel na mesma cor da bolsa', 'Com medalha discreta banhada'],
-      },
-    ],
-    availability: 'pronta-entrega',
-    price: 235.0,
-    stockQuantity: 4,
-    featured: true,
-    active: true,
-  },
-
-  {
-    id: 'prod-celeste',
-    slug: 'bolsa-celeste',
-    name: 'Bolsa Elegance Celeste',
-    subtitle: 'Bolsa grande artesanal feita sob medida para sua rotina',
-    description:
-      'Espaçosa, imponente e totalmente personalizável. A Bolsa Elegance Celeste é tecida sob encomenda com pontos entrelaçados que conferem resistência e caimento fluido. Perfeita para acompanhar dias intensos, viagens ou passeios elegantes.',
-    craftsmanshipDetails: [
-      'Amplo espaço interno com base reforçada em ponto duplo',
-      'Alças de ombro macias com comprimento personalizável',
-      'Possibilidade de combinação bicolor ou monocromática',
-      'Produzida exclusivamente sob encomenda na cor escolhida',
-    ],
-    category: 'Bolsas grandes',
-    additionalCategories: ['Bolsas de ombro'],
-    mainImage: 'images/products/bolsa-celeste.jpg',
-    gallery: [
-      {
-        url: 'images/products/bolsa-celeste.jpg',
-        alt: 'Bolsa Elegance Celeste grande em crochê artesanal tom amêndoa e areia',
-        caption: 'Trama ampla em tons naturais terrosos e areia',
-      },
-    ],
-    models: [
-      {
-        id: 'celeste-tote-media',
-        name: 'Tote Média-Grande',
-        dimensions: '36 cm (largura) × 28 cm (altura) × 12 cm (profundidade)',
-      },
-      {
-        id: 'celeste-tote-maxi',
-        name: 'Maxi Tote Especial',
-        dimensions: '42 cm (largura) × 32 cm (altura) × 14 cm (profundidade)',
-      },
-    ],
-    colors: [
-      { id: 'amendoa', name: 'Caramelo Amêndoa', hex: '#A67553' },
-      { id: 'verde-oliva', name: 'Verde Oliva', hex: '#4A5739' },
-      { id: 'areia', name: 'Bege Areia', hex: '#D4C3AA' },
-      { id: 'off-white', name: 'Off-White Natural', hex: '#F3EFE6' },
-      { id: 'cacau', name: 'Marrom Cacau', hex: '#4E3B31' },
-      { id: 'preto-ebano', name: 'Preto Ébano', hex: '#232220' },
-    ],
-    customizations: [
-      {
-        id: 'tamanho-alca',
-        label: 'Altura da Alça de Ombro',
-        required: true,
-        options: ['Alça padrão de ombro (26 cm de vão)', 'Alça maior (32 cm de vão)', 'Alça dupla reforçada'],
-      },
-      {
-        id: 'forro-bolso',
-        label: 'Acabamento Interno',
-        required: true,
-        options: ['Sem forro (trama estruturada)', 'Forro de algodão cru com bolso interno', 'Forro com fechamento em zíper'],
-      },
-      {
-        id: 'combinacao-cores',
-        label: 'Estilo de Cor',
-        required: true,
-        options: ['Cor única (Monocromática)', 'Bicolor com borda contrastante (informar na observação)'],
-      },
-    ],
-    availability: 'sob-encomenda',
-    // Preço não exibido por ser sob encomenda (controlado automaticamente pela regra do sistema)
-    featured: true,
-    active: true,
-  },
-
-  {
-    id: 'prod-flora',
-    slug: 'bolsa-flora',
-    name: 'Bolsa Flora Atelier',
-    subtitle: 'Edição especial com textura botânica feita sob encomenda',
-    description:
-      'Um modelo autoral criado para destacar o trabalho manual em sua forma mais artística. A Bolsa Flora combina pontos em relevo orgânico e silhueta contemporânea, sendo confeccionada sob medida conforme as preferências de cada cliente.',
-    craftsmanshipDetails: [
-      'Design autoral exclusivo da coleção modelos especiais',
-      'Trama tridimensional inspirada em formas botânicas naturais',
-      'Personalização completa de cores, alça e acabamentos',
-      'Peça numerada e produzida artesanalmente sob consulta',
-    ],
-    category: 'Modelos especiais',
-    additionalCategories: ['Bolsas pequenas', 'Bolsas de mão'],
-    mainImage: 'images/products/bolsa-flora.jpg',
-    gallery: [
-      {
-        url: 'images/products/bolsa-flora.jpg',
-        alt: 'Bolsa Flora Atelier modelo especial em crochê verde sálvia e marfim',
-        caption: 'Modelo autoral com textura botânica em verde oliva suave e off-white',
-      },
-    ],
-    models: [
-      {
-        id: 'flora-mini-bucket',
-        name: 'Formato Mini Bucket Autoral',
-        dimensions: '20 cm (largura) × 19 cm (altura) × 11 cm (base)',
-      },
-      {
-        id: 'flora-ombro-festa',
-        name: 'Formato Tiracolo de Festa',
-        dimensions: '22 cm (largura) × 15 cm (altura) × 7 cm (profundidade)',
-      },
-    ],
-    colors: [
-      { id: 'verde-oliva', name: 'Verde Oliva', hex: '#4A5739' },
-      { id: 'salvia', name: 'Verde Sálvia Suave', hex: '#8A9A78' },
-      { id: 'off-white', name: 'Off-White Pérola', hex: '#F5F1E8' },
-      { id: 'areia', name: 'Bege Areia', hex: '#D4C3AA' },
-      { id: 'amendoa', name: 'Terracota Suave', hex: '#A67553' },
-    ],
-    customizations: [
-      {
-        id: 'alca-especial',
-        label: 'Configuração de Alça',
-        required: true,
-        options: ['Alça de pulso trabalhada em nó', 'Alça longa removível em corrente dourada', 'Ambas as alças (mão + tiracolo)'],
-      },
-      {
-        id: 'personalizacao-inicial',
-        label: 'Detalhe Personalizado',
-        required: false,
-        options: ['Padrão sem inicial', 'Pingente discreto personalizado (consultar opções)'],
-      },
-    ],
-    availability: 'sob-encomenda',
-    featured: true,
-    active: true,
-  },
-
-  {
-    id: 'prod-helena',
-    slug: 'bolsa-helena',
-    name: 'Bolsa Helena',
-    subtitle: 'Bolsa de ombro clássica com ponto espinha de peixe',
-    description:
-      'A Bolsa Helena une o charme da trama espinha de peixe a um formato clássico de ombro que valoriza qualquer produção. Confeccionada sob encomenda para que você escolha a cor exata, o comprimento da alça e o tipo de acabamento interno.',
-    craftsmanshipDetails: [
-      'Ponto espinha de peixe executado manualmente com precisão',
-      'Estrutura pensada para manter a elegância com uso frequente',
-      'Alça ergonômica que se adapta perfeitamente ao ombro',
-      'Totalmente personalizável em cores e dimensões de alça',
+      'Modelagem estilo Hobo/Tote com alça de ombro anatômica integrada',
+      'Trama fechada de ponto baixo com toque macio e alta durabilidade',
+      'Visual clean e atemporal em tom neutro fácil de combinar',
+      'Confeccionada manualmente ponto a ponto',
     ],
     category: 'Bolsas de ombro',
     additionalCategories: ['Bolsas grandes'],
-    mainImage: 'images/products/hero-banner.jpg',
+    mainImage: 'images/products/bolsa-ombro-areia.jpg',
     gallery: [
       {
-        url: 'images/products/hero-banner.jpg',
-        alt: 'Bolsa Helena de ombro em crochê artesanal sobre pedra natural',
-        caption: 'Acabamento sofisticado em verde oliva e off-white',
-      },
-      {
-        url: 'images/products/bolsa-olivia.jpg',
-        alt: 'Detalhe de ponto artesanal da linha de ombro Rosana&Co',
-        caption: 'Detalhe de ferragens e ponto estruturado',
+        url: 'images/products/bolsa-ombro-areia.jpg',
+        alt: 'Bolsa de ombro em crochê tom bege areia natural',
+        caption: 'Bolsa Hobo em tom Bege Aveia / Areia Natural',
       },
     ],
     models: [
       {
-        id: 'helena-media',
-        name: 'Helena Média (Uso Diário)',
-        dimensions: '31 cm (largura) × 23 cm (altura) × 10 cm (profundidade)',
+        id: 'areia-media-grande',
+        name: 'Tamanho Padrão de Ombro',
+        dimensions: '30 cm (largura) × 24 cm (altura) × 9 cm (profundidade)',
+        description: 'Espaço ideal para o dia a dia: carteira, celular, óculos, agenda e necessaire.',
       },
       {
-        id: 'helena-grande',
-        name: 'Helena Grande',
-        dimensions: '37 cm (largura) × 27 cm (altura) × 12 cm (profundidade)',
+        id: 'areia-maxi',
+        name: 'Tamanho Grande (Maxi)',
+        dimensions: '36 cm (largura) × 28 cm (altura) × 11 cm (profundidade)',
+        description: 'Versão ampla para quem precisa levar mais itens na rotina.',
+      },
+    ],
+    colors: [
+      { id: 'areia', name: 'Bege Aveia / Areia', hex: '#C6A988', availableForImmediateDelivery: true },
+      { id: 'off-white', name: 'Off-White Natural', hex: '#F3EFE6', availableForImmediateDelivery: false },
+      { id: 'terracota', name: 'Terracota Amêndoa', hex: '#8D5841', availableForImmediateDelivery: false },
+      { id: 'verde-oliva', name: 'Verde Oliva', hex: '#4A5739', availableForImmediateDelivery: false },
+      { id: 'preto', name: 'Preto Ébano', hex: '#1E1D1B', availableForImmediateDelivery: false },
+    ],
+    customizations: [
+      {
+        id: 'altura-alca',
+        label: 'Comprimento da Alça de Ombro',
+        required: true,
+        options: ['Alça padrão confortável (Como na foto)', 'Alça maior (+6 cm)', 'Alça menor'],
+      },
+      {
+        id: 'fechamento-interno',
+        label: 'Fechamento e Forro',
+        required: true,
+        options: ['Botão magnético embutido', 'Com forro interno de algodão', 'Trama original sem forro'],
+      },
+    ],
+    availability: 'pronta-entrega',
+    price: 219.0,
+    stockQuantity: 2,
+    featured: true,
+    active: true,
+  },
+
+  {
+    id: 'prod-tassel-terracota',
+    slug: 'bolsa-transversal-terracota',
+    name: 'Bolsa Transversal Terracota',
+    subtitle: 'Tiracolo artesanal em tom terroso com tassel e alça trançada',
+    description:
+      'A Bolsa Transversal Terracota traz o aconchego dos tons terrosos naturais em uma peça prática e cheia de charme. Possui alça longa trabalhada em crochê, argolas laterais prateadas, plaquinha metálica e um delicado pingente tassel feito à mão na mesma tonalidade.',
+    craftsmanshipDetails: [
+      'Alça longa em crochê resistente para uso transversal ou lateral no ombro',
+      'Pingente tassel volumoso feito manualmente no mesmo fio da bolsa',
+      'Argolas articuladas e plaquinha metálica centralizada',
+      'Estrutura retangular elegante que mantém o formato',
+    ],
+    category: 'Bolsas transversais',
+    additionalCategories: ['Bolsas pequenas', 'Bolsas de ombro'],
+    mainImage: 'images/products/bolsa-tassel-terracota.jpg',
+    gallery: [
+      {
+        url: 'images/products/bolsa-tassel-terracota.jpg',
+        alt: 'Bolsa transversal de crochê na cor terracota amêndoa com tassel',
+        caption: 'Acabamento em Terracota Amêndoa com tassel lateral',
+      },
+      {
+        url: 'images/products/bolsa-tassel-preta.jpg',
+        alt: 'Mesmo modelo na versão Preto Ébano',
+        caption: 'Versão do modelo na cor Preto Ébano',
+      },
+    ],
+    models: [
+      {
+        id: 'terracota-padrao',
+        name: 'Transversal Clássica',
+        dimensions: '24 cm (largura) × 17 cm (altura) × 5 cm (profundidade)',
+      },
+      {
+        id: 'terracota-media',
+        name: 'Transversal Média',
+        dimensions: '27 cm (largura) × 20 cm (altura) × 7 cm (profundidade)',
+      },
+    ],
+    colors: [
+      { id: 'terracota', name: 'Terracota Amêndoa', hex: '#8D5841', availableForImmediateDelivery: true },
+      { id: 'preto', name: 'Preto Ébano', hex: '#1E1D1B', availableForImmediateDelivery: true },
+      { id: 'off-white', name: 'Off-White Natural', hex: '#F3EFE6', availableForImmediateDelivery: true },
+      { id: 'areia', name: 'Bege Aveia', hex: '#C6A988', availableForImmediateDelivery: false },
+      { id: 'verde-oliva', name: 'Verde Oliva', hex: '#4A5739', availableForImmediateDelivery: false },
+    ],
+    customizations: [
+      {
+        id: 'tamanho-alca-transversal',
+        label: 'Tamanho da Alça',
+        required: true,
+        options: ['Padrão transversal (110 cm)', 'Alça maior (120 cm)', 'Alça menor de ombro (95 cm)'],
+      },
+      {
+        id: 'opcao-tassel',
+        label: 'Detalhe de Tassel',
+        required: true,
+        options: ['Com tassel lateral (Como na foto)', 'Sem tassel'],
+      },
+    ],
+    availability: 'pronta-entrega',
+    price: 179.0,
+    stockQuantity: 3,
+    featured: true,
+    active: true,
+  },
+
+  {
+    id: 'prod-tassel-preta',
+    slug: 'bolsa-transversal-noite',
+    name: 'Bolsa Clássica Ébano',
+    subtitle: 'Transversal preta atemporal com tassel removível e alça macia',
+    description:
+      'Indispensável no guarda-roupa feminino, a Bolsa Clássica Ébano combina com qualquer produção — do passeio casual ao jantar especial. Confeccionada à mão em fio preto intenso, conta com alça longa trançada, ferragens prateadas e pingente tassel removível com mosquetão.',
+    craftsmanshipDetails: [
+      'Cor preta clássica de fácil manutenção e alta versatilidade',
+      'Pingente tassel com fecho mosquetão prateado (pode ser usado ou removido)',
+      'Alça em crochê espesso que não machuca o ombro',
+      'Feita à mão com acabamento de alfaiataria artesanal',
+    ],
+    category: 'Bolsas transversais',
+    additionalCategories: ['Bolsas pequenas', 'Bolsas de ombro'],
+    mainImage: 'images/products/bolsa-tassel-preta.jpg',
+    gallery: [
+      {
+        url: 'images/products/bolsa-tassel-preta.jpg',
+        alt: 'Bolsa de crochê preta transversal com tassel lateral',
+        caption: 'Bolsa Clássica Ébano com tassel e ferragens prateadas',
+      },
+      {
+        url: 'images/products/bolsa-tassel-terracota.jpg',
+        alt: 'Variação em tom Terracota Amêndoa',
+        caption: 'Disponível também em Terracota Amêndoa',
+      },
+    ],
+    models: [
+      {
+        id: 'ebano-padrao',
+        name: 'Transversal Clássica',
+        dimensions: '24 cm (largura) × 17 cm (altura) × 5 cm (profundidade)',
+      },
+      {
+        id: 'ebano-corrente',
+        name: 'Versão com Alça Dupla (Crochê + Corrente)',
+        dimensions: '24 cm (largura) × 17 cm (altura) + corrente adicional',
+      },
+    ],
+    colors: [
+      { id: 'preto', name: 'Preto Ébano', hex: '#1E1D1B', availableForImmediateDelivery: true },
+      { id: 'off-white', name: 'Off-White Natural', hex: '#F3EFE6', availableForImmediateDelivery: true },
+      { id: 'terracota', name: 'Terracota Amêndoa', hex: '#8D5841', availableForImmediateDelivery: true },
+      { id: 'verde-oliva', name: 'Verde Oliva', hex: '#4A5739', availableForImmediateDelivery: false },
+    ],
+    customizations: [
+      {
+        id: 'alca-ebano',
+        label: 'Estilo da Alça',
+        required: true,
+        options: [
+          'Alça longa em crochê (Como na foto)',
+          'Alça de ombro + corrente prateada',
+          'Alça maior personalizada',
+        ],
+      },
+      {
+        id: 'metais-ebano',
+        label: 'Cor dos Metais',
+        required: true,
+        options: ['Prateado (Padrão da foto)', 'Dourado'],
+      },
+    ],
+    availability: 'pronta-entrega',
+    price: 179.0,
+    stockQuantity: 2,
+    featured: false,
+    active: true,
+  },
+
+  {
+    id: 'prod-franja-vermelha',
+    slug: 'bolsa-carmim-franjas',
+    name: 'Bolsa Carmim Boho',
+    subtitle: 'Modelo especial com franjas laterais e alça longa em crochê',
+    description:
+      'Cheia de personalidade e delicadeza artesanal, a Bolsa Carmim Boho destaca-se pelas franjas laterais duplas e pela trama horizontal marcada. Uma peça autoral feita sob encomenda para mulheres que desejam um ponto de cor elegante ou que preferem personalizá-la em tons neutros.',
+    craftsmanshipDetails: [
+      'Acabamento lateral exclusivo com franjas em fio macio',
+      'Trama estruturada com relevo horizontal linear',
+      'Alça longa confortável tecida manualmente',
+      'Totalmente personalizável na cor de sua preferência',
+    ],
+    category: 'Modelos especiais',
+    additionalCategories: ['Bolsas transversais', 'Bolsas pequenas'],
+    mainImage: 'images/products/bolsa-franja-vermelha.jpg',
+    gallery: [
+      {
+        url: 'images/products/bolsa-franja-vermelha.jpg',
+        alt: 'Bolsa de crochê vermelha com franjas laterais e alça longa',
+        caption: 'Bolsa Carmim Boho com franjas laterais artesanais',
+      },
+    ],
+    models: [
+      {
+        id: 'carmim-padrao',
+        name: 'Tamanho Clássico com Franjas',
+        dimensions: '24 cm (largura) × 17 cm (altura) × 5 cm (profundidade)',
+      },
+      {
+        id: 'carmim-sem-franja',
+        name: 'Versão Lisa (Sem Franjas Laterais)',
+        dimensions: '24 cm (largura) × 17 cm (altura) × 5 cm (profundidade)',
+      },
+    ],
+    colors: [
+      { id: 'vermelho-carmim', name: 'Vermelho Carmim (Foto)', hex: '#C81D25' },
+      { id: 'verde-oliva', name: 'Verde Oliva', hex: '#4A5739' },
+      { id: 'off-white', name: 'Off-White Natural', hex: '#F3EFE6' },
+      { id: 'areia', name: 'Bege Aveia', hex: '#C6A988' },
+      { id: 'terracota', name: 'Terracota Amêndoa', hex: '#8D5841' },
+      { id: 'preto', name: 'Preto Ébano', hex: '#1E1D1B' },
+    ],
+    customizations: [
+      {
+        id: 'acabamento-lateral',
+        label: 'Acabamento das Laterais',
+        required: true,
+        options: [
+          'Com franjas nas duas laterais (Como na foto)',
+          'Com apenas 1 tassel lateral',
+          'Sem franjas (acabamento liso)',
+        ],
+      },
+      {
+        id: 'comprimento-alca-boho',
+        label: 'Comprimento da Alça',
+        required: true,
+        options: ['Alça transversal padrão', 'Alça maior', 'Alça curta de ombro'],
+      },
+    ],
+    availability: 'sob-encomenda',
+    featured: true,
+    active: true,
+  },
+
+  {
+    id: 'prod-mochila-preta',
+    slug: 'mochila-bolsa-ebano',
+    name: 'Mochila & Bolsa Conversível Ébano',
+    subtitle: 'Design 2 em 1 com aba texturizada, fecho metálico e tassel lateral',
+    description:
+      'Praticidade e elegância artesanal em uma peça versátil. A Mochila & Bolsa Conversível Ébano possui aba frontal com ponto em relevo horizontal, fecho metálico de encaixe seguro, alças confortáveis em crochê que permitem uso como mochila ou bolsa de ombro, além de pingente tassel removível.',
+    craftsmanshipDetails: [
+      'Modelagem funcional 2 em 1: pode ser usada como mochila ou bolsa de ombro',
+      'Aba estruturada com textura canelada horizontal e fecho metálico tic-tac',
+      'Acompanha pingente tassel volumoso removível com mosquetão prateado',
+      'Amplo espaço interno com base firme tecida à mão',
+    ],
+    category: 'Bolsas grandes',
+    additionalCategories: ['Bolsas de ombro', 'Modelos especiais'],
+    mainImage: 'images/products/mochila-preta.jpg',
+    gallery: [
+      {
+        url: 'images/products/mochila-preta.jpg',
+        alt: 'Mochila e bolsa de crochê preta com aba texturizada e tassel',
+        caption: 'Mochila & Bolsa Conversível na cor Preto Ébano',
+      },
+      {
+        url: 'images/products/bolsa-aba-malva.jpg',
+        alt: 'Versão com aba texturizada na cor Rosê Malva',
+        caption: 'Detalhe da aba canelada também disponível no tom Rosê Malva',
+      },
+    ],
+    models: [
+      {
+        id: 'mochila-padrao',
+        name: 'Mochila Conversível Média/Grande',
+        dimensions: '27 cm (largura) × 26 cm (altura) × 10 cm (profundidade)',
+        description: 'Ideal para rotina diária, passeios e viagens, mantendo as mãos livres com elegância.',
+      },
+      {
+        id: 'mochila-compacta',
+        name: 'Versão Mini Mochila',
+        dimensions: '23 cm (largura) × 22 cm (altura) × 8 cm (profundidade)',
+        description: 'Formato mais compacto e delicado para o dia a dia.',
+      },
+    ],
+    colors: [
+      { id: 'preto', name: 'Preto Ébano (Foto)', hex: '#1E1D1B', availableForImmediateDelivery: true },
+      { id: 'malva', name: 'Rosê Malva / Nude Antigo', hex: '#9E766E', availableForImmediateDelivery: false },
+      { id: 'areia', name: 'Bege Aveia', hex: '#C6A988', availableForImmediateDelivery: false },
+      { id: 'off-white', name: 'Off-White Natural', hex: '#F3EFE6', availableForImmediateDelivery: false },
+      { id: 'verde-oliva', name: 'Verde Oliva', hex: '#4A5739', availableForImmediateDelivery: false },
+    ],
+    customizations: [
+      {
+        id: 'alca-mochila',
+        label: 'Configuração das Alças',
+        required: true,
+        options: [
+          'Alças conversíveis (Mochila + Ombro como na foto)',
+          'Alça longa única para uso transversal',
+          'Alças de mochila com regulagem extra',
+        ],
+      },
+      {
+        id: 'tassel-mochila',
+        label: 'Pingente Tassel',
+        required: true,
+        options: ['Com tassel lateral removível (Como na foto)', 'Sem tassel'],
+      },
+    ],
+    availability: 'pronta-entrega',
+    price: 249.0,
+    stockQuantity: 2,
+    featured: true,
+    active: true,
+  },
+
+  {
+    id: 'prod-aba-malva',
+    slug: 'bolsa-aba-rose-malva',
+    name: 'Bolsa Satchel Rosê Malva',
+    subtitle: 'Bolsa estruturada com aba canelada, fecho clássico e alça removível',
+    description:
+      'Delicada, feminina e cheia de charme artesanal. A Bolsa Satchel Rosê Malva destaca-se pela aba frontal trabalhada em ponto relevo horizontal, fecho metálico clássico, tassel lateral longo e alça em crochê presa por mosquetões prateados.',
+    craftsmanshipDetails: [
+      'Aba frontal com acabamento canelado em relevo feito à mão',
+      'Fecho metálico frontal de encaixe prático e seguro',
+      'Alça em crochê trançado com mosquetões prateados articulados',
+      'Acompanha tassel artesanal longo na mesma tonalidade da peça',
+    ],
+    category: 'Bolsas transversais',
+    additionalCategories: ['Bolsas de ombro', 'Modelos especiais'],
+    mainImage: 'images/products/bolsa-aba-malva.jpg',
+    gallery: [
+      {
+        url: 'images/products/bolsa-aba-malva.jpg',
+        alt: 'Bolsa de crochê Rosê Malva com aba canelada, fecho metálico e tassel',
+        caption: 'Bolsa Satchel na cor Rosê Malva / Nude Antigo',
+      },
+      {
+        url: 'images/products/mochila-preta.jpg',
+        alt: 'Variação da linha na cor Preto Ébano',
+        caption: 'Linha disponível também no formato mochila na cor Preto Ébano',
+      },
+    ],
+    models: [
+      {
+        id: 'malva-satchel-media',
+        name: 'Modelo Satchel Transversal / Ombro',
+        dimensions: '26 cm (largura) × 21 cm (altura) × 8 cm (profundidade)',
+        description: 'Excelente espaço interno para carteira, celular, óculos e itens pessoais.',
+      },
+      {
+        id: 'malva-mochila',
+        name: 'Versão Mochila Conversível (2 em 1)',
+        dimensions: '27 cm (largura) × 26 cm (altura) × 10 cm (profundidade)',
+        description: 'Mesmo acabamento com alças duplas para uso como mochila ou bolsa.',
+      },
+    ],
+    colors: [
+      { id: 'malva', name: 'Rosê Malva / Nude Antigo (Foto)', hex: '#9E766E', availableForImmediateDelivery: true },
+      { id: 'preto', name: 'Preto Ébano', hex: '#1E1D1B', availableForImmediateDelivery: true },
+      { id: 'off-white', name: 'Off-White Natural', hex: '#F3EFE6', availableForImmediateDelivery: false },
+      { id: 'areia', name: 'Bege Aveia', hex: '#C6A988', availableForImmediateDelivery: false },
+      { id: 'terracota', name: 'Terracota Amêndoa', hex: '#8D5841', availableForImmediateDelivery: false },
+      { id: 'verde-oliva', name: 'Verde Oliva', hex: '#4A5739', availableForImmediateDelivery: false },
+    ],
+    customizations: [
+      {
+        id: 'alca-satchel',
+        label: 'Estilo de Alça',
+        required: true,
+        options: [
+          'Alça longa transversal/ombro com mosquetão (Como na foto)',
+          'Alças duplas estilo mochila conversível',
+          'Alça maior personalizada',
+        ],
+      },
+      {
+        id: 'tassel-satchel',
+        label: 'Detalhe Lateral',
+        required: true,
+        options: ['Com tassel longo artesanal (Como na foto)', 'Sem tassel'],
+      },
+    ],
+    availability: 'pronta-entrega',
+    price: 229.0,
+    stockQuantity: 2,
+    featured: true,
+    active: true,
+  },
+
+  {
+    id: 'prod-atelier-sob-medida',
+    slug: 'bolsa-personalizada-atelier',
+    name: 'Bolsa Exclusiva Sob Encomenda',
+    subtitle: 'Escolha o formato, a cor do fio, o tipo de alça e os acabamentos',
+    description:
+      'Deseja combinar o formato de uma bolsa com a alça ou a cor de outro modelo? Nesta opção sob encomenda você configura sua bolsa Rosana&Co exatamente como sonhou: escolha entre modelagem Hobo de ombro, transversal com tassel ou modelo Duo com corrente.',
+    craftsmanshipDetails: [
+      'Confeccionada sob medida especialmente para o seu pedido',
+      'Escolha livre entre todas as cores da nossa cartela de fios',
+      'Opção de alça em crochê, alça dupla com corrente ou alça de mão',
+      'Atendimento próximo pelo WhatsApp para alinhar cada detalhe',
+    ],
+    category: 'Bolsas de mão',
+    additionalCategories: ['Modelos especiais', 'Bolsas de ombro', 'Bolsas grandes'],
+    mainImage: 'images/products/bolsa-tassel-terracota.jpg',
+    gallery: [
+      {
+        url: 'images/products/bolsa-duo-offwhite.jpg',
+        alt: 'Opção com alça dupla em off-white',
+        caption: 'Opção 1: Modelo Duo com alça de ombro + corrente',
+      },
+      {
+        url: 'images/products/bolsa-ombro-areia.jpg',
+        alt: 'Opção Hobo de ombro em areia',
+        caption: 'Opção 2: Modelo Hobo espaçoso de ombro',
+      },
+      {
+        url: 'images/products/bolsa-tassel-preta.jpg',
+        alt: 'Opção transversal preta com tassel',
+        caption: 'Opção 3: Modelo Transversal com tassel',
+      },
+      {
+        url: 'images/products/bolsa-franja-vermelha.jpg',
+        alt: 'Opção com franjas laterais',
+        caption: 'Opção 4: Modelo com franjas laterais',
+      },
+      {
+        url: 'images/products/mochila-preta.jpg',
+        alt: 'Opção Mochila Conversível com aba e fecho',
+        caption: 'Opção 5: Mochila & Bolsa Conversível com aba canelada',
+      },
+      {
+        url: 'images/products/bolsa-aba-malva.jpg',
+        alt: 'Opção Satchel com aba e tassel',
+        caption: 'Opção 6: Modelo Satchel com aba e fecho metálico',
+      },
+    ],
+    models: [
+      {
+        id: 'custom-mochila',
+        name: 'Formato Mochila Conversível (Aba + Fecho)',
+        dimensions: '27 cm × 26 cm',
+      },
+      {
+        id: 'custom-satchel',
+        name: 'Formato Satchel com Aba Canelada',
+        dimensions: '26 cm × 21 cm',
+      },
+      {
+        id: 'custom-duo',
+        name: 'Formato Duo (Ombro + Corrente)',
+        dimensions: '24 cm × 16 cm',
+      },
+      {
+        id: 'custom-hobo',
+        name: 'Formato Hobo (Bolsa Média/Grande)',
+        dimensions: '30 cm × 24 cm',
+      },
+      {
+        id: 'custom-transversal',
+        name: 'Formato Transversal Retangular',
+        dimensions: '24 cm × 17 cm',
       },
     ],
     colors: [
       { id: 'verde-oliva', name: 'Verde Oliva', hex: '#4A5739' },
       { id: 'off-white', name: 'Off-White Natural', hex: '#F3EFE6' },
-      { id: 'areia', name: 'Bege Areia', hex: '#D4C3AA' },
-      { id: 'amendoa', name: 'Caramelo Amêndoa', hex: '#A67553' },
-      { id: 'cacau', name: 'Marrom Cacau', hex: '#4E3B31' },
+      { id: 'areia', name: 'Bege Aveia / Areia', hex: '#C6A988' },
+      { id: 'malva', name: 'Rosê Malva / Nude Antigo', hex: '#9E766E' },
+      { id: 'terracota', name: 'Terracota Amêndoa', hex: '#8D5841' },
+      { id: 'preto', name: 'Preto Ébano', hex: '#1E1D1B' },
+      { id: 'vermelho-carmim', name: 'Vermelho Carmim', hex: '#C81D25' },
     ],
     customizations: [
       {
-        id: 'alca-helena',
-        label: 'Tamanho da Alça',
+        id: 'custom-alca-escolha',
+        label: 'Preferência de Alça',
         required: true,
-        options: ['Alça padrão de ombro', 'Alça maior (+6 cm)', 'Alça menor para uso próximo ao braço'],
+        options: [
+          'Alça longa transversal em crochê',
+          'Alça de ombro + corrente metálica',
+          'Alça integrada estilo Hobo',
+          'Alça curta de mão',
+        ],
       },
       {
-        id: 'forro-helena',
-        label: 'Forro Interno',
+        id: 'custom-detalhe-escolha',
+        label: 'Detalhes Especiais',
         required: true,
-        options: ['Com forro em algodão cru e divisória', 'Sem forro'],
+        options: [
+          'Com tassel lateral',
+          'Com franjas laterais',
+          'Minimalista (sem tassel/franjas)',
+        ],
       },
     ],
     availability: 'sob-encomenda',
-    featured: false,
+    featured: true,
     active: true,
   },
 ];

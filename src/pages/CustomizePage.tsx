@@ -67,13 +67,13 @@ export const CustomizePage: React.FC = () => {
 
           <div className="lg:col-span-5 bg-ivory-100 p-6 sm:p-8 h-full grid grid-cols-2 gap-4">
             <img
-              src="images/products/bolsa-celeste.jpg"
-              alt="Bolsa artesanal personalizada em tom caramelo e bege"
+              src="images/products/bolsa-tassel-terracota.jpg"
+              alt="Bolsa artesanal personalizada em tom terracota"
               className="rounded-2xl aspect-[3/4] object-cover w-full shadow-xs"
             />
             <img
-              src="images/products/bolsa-flora.jpg"
-              alt="Bolsa artesanal personalizada em verde sálvia e marfim"
+              src="images/products/bolsa-franja-vermelha.jpg"
+              alt="Bolsa artesanal personalizada com franjas laterais"
               className="rounded-2xl aspect-[3/4] object-cover w-full shadow-xs mt-8"
             />
           </div>
