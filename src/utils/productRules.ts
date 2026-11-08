@@ -13,8 +13,6 @@ export function isReadyToShip(product: Product): boolean {
   return (
     product.active &&
     product.availability === 'pronta-entrega' &&
-    typeof product.price === 'number' &&
-    product.price > 0 &&
     (product.stockQuantity === undefined || product.stockQuantity > 0)
   );
 }

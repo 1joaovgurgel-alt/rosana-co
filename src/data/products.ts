@@ -339,7 +339,7 @@ export const productsData: Product[] = [
       },
     ],
     colors: [
-      { id: 'vermelho-Vermelha', name: 'Vermelho Vermelha (Foto)', hex: '#C81D25' },
+      { id: 'vermelho-carmim', name: 'Vermelho Carmim (Foto)', hex: '#C81D25', availableForImmediateDelivery: true },
       { id: 'verde-oliva', name: 'Verde Oliva', hex: '#4A5739' },
       { id: 'off-white', name: 'Off-White Natural', hex: '#F3EFE6' },
       { id: 'areia', name: 'Bege Aveia', hex: '#C6A988' },
@@ -365,6 +365,8 @@ export const productsData: Product[] = [
       },
     ],
     availability: 'pronta-entrega',
+    price: 189.0,
+    stockQuantity: 2,
     featured: true,
     active: true,
   },
