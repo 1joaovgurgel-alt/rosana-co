@@ -306,7 +306,7 @@ export const productsData: Product[] = [
   {
     id: 'prod-franja-vermelha',
     slug: 'bolsa-vermelha-franjas',
-    name: 'Bolsa vermelha Boho',
+    name: 'Bolsa Vermelha Boho',
     subtitle: 'Modelo especial com franjas laterais e alça longa em crochê',
     description:
       'Cheia de personalidade e delicadeza artesanal, a Bolsa vermelha Boho destaca-se pelas franjas laterais duplas e pela trama horizontal marcada. Uma peça autoral feita sob encomenda para mulheres que desejam um ponto de cor elegante ou que preferem personalizá-la em tons neutros.',
