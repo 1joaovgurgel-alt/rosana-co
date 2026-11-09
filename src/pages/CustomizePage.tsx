@@ -22,21 +22,21 @@ export const CustomizePage: React.FC = () => {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16 space-y-16">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-7 sm:py-12 lg:py-16 space-y-12 sm:space-y-16">
       {/* Hero Personalização */}
       <section className="rounded-3xl bg-white border border-sand-200 overflow-hidden shadow-subtle">
         <div className="grid grid-cols-1 lg:grid-cols-12 items-center">
-          <div className="lg:col-span-7 p-8 sm:p-12 lg:p-16 space-y-6">
+          <div className="lg:col-span-7 p-6 sm:p-10 lg:p-16 space-y-5 sm:space-y-6">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-olive-50 border border-olive-200 text-olive-800 text-xs font-medium">
               <Palette className="w-3.5 h-3.5" />
               Feita sob medida para o seu estilo
             </div>
 
-            <h1 className="font-serif text-4xl sm:text-5xl font-medium text-charcoal-900 leading-tight">
+            <h1 className="font-serif text-3xl sm:text-5xl font-medium text-charcoal-900 leading-tight">
               {siteConfig.institutional.customSectionTitle}
             </h1>
 
-            <div className="space-y-4 text-base text-charcoal-700/90 leading-relaxed">
+            <div className="space-y-3.5 sm:space-y-4 text-sm sm:text-base text-charcoal-700/90 leading-relaxed">
               {siteConfig.institutional.customSectionBody.map((text, idx) => (
                 <p key={idx}>{text}</p>
               ))}
@@ -46,44 +46,44 @@ export const CustomizePage: React.FC = () => {
               {siteConfig.institutional.customOrderNotice}
             </div>
 
-            <div className="pt-2 flex flex-wrap gap-3.5">
+            <div className="pt-1 flex flex-col sm:flex-row gap-3">
               <a
                 href={customInquiryUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl bg-olive-700 hover:bg-olive-800 text-ivory-50 font-medium text-sm shadow-subtle transition-colors"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 min-h-[48px] rounded-xl bg-olive-700 hover:bg-olive-800 text-ivory-50 font-medium text-sm shadow-subtle transition-colors"
               >
                 <MessageCircle className="w-4 h-4" />
                 Quero personalizar minha bolsa
               </a>
               <Link
                 to="/catalogo"
-                className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-ivory-50 hover:bg-ivory-100 text-charcoal-900 border border-sand-300 font-medium text-sm transition-colors"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 min-h-[48px] rounded-xl bg-ivory-50 hover:bg-ivory-100 text-charcoal-900 border border-sand-300 font-medium text-sm transition-colors"
               >
                 Escolher modelo no catálogo
               </Link>
             </div>
           </div>
 
-          <div className="lg:col-span-5 bg-ivory-100 p-6 sm:p-8 h-full grid grid-cols-2 gap-4">
+          <div className="lg:col-span-5 bg-ivory-100 p-4 sm:p-8 h-full grid grid-cols-2 gap-3 sm:gap-4">
             <img
               src="images/products/bolsa-tassel-terracota.jpg"
               alt="Bolsa artesanal personalizada em tom terracota"
-              className="rounded-2xl aspect-[3/4] object-cover w-full shadow-xs"
+              className="rounded-2xl aspect-square sm:aspect-[3/4] object-cover w-full shadow-xs"
             />
             <img
               src="images/products/bolsa-franja-vermelha.jpg"
               alt="Bolsa artesanal personalizada com franjas laterais"
-              className="rounded-2xl aspect-[3/4] object-cover w-full shadow-xs mt-8"
+              className="rounded-2xl aspect-square sm:aspect-[3/4] object-cover w-full shadow-xs sm:mt-8"
             />
           </div>
         </div>
       </section>
 
       {/* O que pode ser personalizado */}
-      <section className="space-y-8">
+      <section className="space-y-6 sm:space-y-8">
         <div className="max-w-2xl">
-          <span className="text-xs font-medium text-olive-700 uppercase tracking-wider">
+          <span className="text-[11px] sm:text-xs font-medium text-olive-700 uppercase tracking-wider">
             Liberdade de Criação
           </span>
           <h2 className="mt-1 font-serif text-3xl sm:text-4xl font-medium text-charcoal-900">
@@ -94,8 +94,8 @@ export const CustomizePage: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="p-7 rounded-2xl bg-white border border-sand-200 shadow-subtle space-y-3">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
+          <div className="p-5 sm:p-7 rounded-2xl bg-white border border-sand-200 shadow-subtle space-y-2.5 sm:space-y-3">
             <div className="w-10 h-10 rounded-xl bg-olive-50 border border-olive-200 text-olive-700 flex items-center justify-center">
               <Palette className="w-5 h-5" />
             </div>
@@ -107,7 +107,7 @@ export const CustomizePage: React.FC = () => {
             </p>
           </div>
 
-          <div className="p-7 rounded-2xl bg-white border border-sand-200 shadow-subtle space-y-3">
+          <div className="p-5 sm:p-7 rounded-2xl bg-white border border-sand-200 shadow-subtle space-y-2.5 sm:space-y-3">
             <div className="w-10 h-10 rounded-xl bg-olive-50 border border-olive-200 text-olive-700 flex items-center justify-center">
               <Scissors className="w-5 h-5" />
             </div>
@@ -115,11 +115,11 @@ export const CustomizePage: React.FC = () => {
               Alças &amp; Medidas
             </h3>
             <p className="text-sm text-charcoal-700/85 leading-relaxed">
-              Solicite alças de ombro maiores ou menores, alças transversais sob medida, correntes douradas ou alças 100% tecidas em crochê.
+              Solicite alças de ombro maiores ou menores, alças transversais sob medida, correntes ou alças 100% tecidas em crochê.
             </p>
           </div>
 
-          <div className="p-7 rounded-2xl bg-white border border-sand-200 shadow-subtle space-y-3">
+          <div className="p-5 sm:p-7 rounded-2xl bg-white border border-sand-200 shadow-subtle space-y-2.5 sm:space-y-3">
             <div className="w-10 h-10 rounded-xl bg-olive-50 border border-olive-200 text-olive-700 flex items-center justify-center">
               <Layers className="w-5 h-5" />
             </div>
@@ -134,10 +134,10 @@ export const CustomizePage: React.FC = () => {
       </section>
 
       {/* Cartela de Cores Inspiracional */}
-      <section className="bg-white rounded-3xl border border-sand-200 p-8 sm:p-10 lg:p-12 shadow-subtle space-y-8">
+      <section className="bg-white rounded-3xl border border-sand-200 p-6 sm:p-10 lg:p-12 shadow-subtle space-y-6 sm:space-y-8">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
           <div>
-            <span className="text-xs font-medium text-olive-700 uppercase tracking-wider">
+            <span className="text-[11px] sm:text-xs font-medium text-olive-700 uppercase tracking-wider">
               Tons Naturais &amp; Sofisticados
             </span>
             <h2 className="mt-1 font-serif text-3xl sm:text-4xl font-medium text-charcoal-900">
@@ -149,14 +149,14 @@ export const CustomizePage: React.FC = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
           {colorPaletteShowcase.map((swatch) => (
             <div
               key={swatch.name}
-              className="flex items-start gap-4 p-4 rounded-2xl bg-ivory-50 border border-sand-200"
+              className="flex items-start gap-3.5 sm:gap-4 p-4 rounded-2xl bg-ivory-50 border border-sand-200"
             >
               <div
-                className="w-12 h-12 rounded-xl border border-charcoal-900/15 flex-shrink-0 shadow-inner"
+                className="w-11 h-11 sm:w-12 sm:h-12 rounded-xl border border-charcoal-900/15 flex-shrink-0 shadow-inner"
                 style={{ backgroundColor: swatch.hex }}
               />
               <div>
@@ -173,8 +173,8 @@ export const CustomizePage: React.FC = () => {
       </section>
 
       {/* Modelos Sob Encomenda */}
-      <section className="space-y-8">
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
+      <section className="space-y-6 sm:space-y-8">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-3 sm:gap-4">
           <div>
             <span className="inline-flex items-center gap-1.5 text-xs font-medium text-olive-700">
               <Sparkles className="w-3.5 h-3.5" />
@@ -193,7 +193,7 @@ export const CustomizePage: React.FC = () => {
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-7">
           {madeToOrderProducts.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}

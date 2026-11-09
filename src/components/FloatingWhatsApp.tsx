@@ -1,9 +1,13 @@
 import React from 'react';
 import { MessageCircle } from 'lucide-react';
 import { buildGeneralContactUrl } from '../utils/productRules';
+import { useBag } from '../context/BagContext';
 
 export const FloatingWhatsApp: React.FC = () => {
+  const { isBagOpen } = useBag();
   const url = buildGeneralContactUrl();
+
+  if (isBagOpen) return null;
 
   return (
     <a
@@ -11,9 +15,9 @@ export const FloatingWhatsApp: React.FC = () => {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Falar com a Rosana&Co pelo WhatsApp"
-      className="fixed bottom-5 right-5 z-30 inline-flex items-center gap-2.5 px-4 py-3 rounded-full bg-olive-700 hover:bg-olive-800 text-ivory-50 shadow-elevated border border-ivory-50/20 transition-all duration-300 hover:-translate-y-0.5 group"
+      className="fixed bottom-4 right-4 sm:bottom-5 sm:right-5 z-30 w-12 h-12 sm:w-auto sm:h-auto sm:px-4 sm:py-3 rounded-full bg-olive-700 hover:bg-olive-800 text-ivory-50 shadow-elevated border border-ivory-50/20 inline-flex items-center justify-center gap-2 transition-all duration-300 hover:-translate-y-0.5 group"
     >
-      <MessageCircle className="w-5 h-5" />
+      <MessageCircle className="w-5 h-5 flex-shrink-0" />
       <span className="text-xs font-medium pr-0.5 hidden sm:inline">
         Atendimento WhatsApp
       </span>

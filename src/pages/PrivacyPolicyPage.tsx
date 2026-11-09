@@ -3,20 +3,20 @@ import { siteConfig } from '../config/siteConfig';
 
 export const PrivacyPolicyPage: React.FC = () => {
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16 space-y-8">
-      <div className="bg-white rounded-3xl border border-sand-200 p-8 sm:p-12 shadow-subtle space-y-6">
+    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-7 sm:py-12 lg:py-16 space-y-8">
+      <div className="bg-white rounded-3xl border border-sand-200 p-6 sm:p-12 shadow-subtle space-y-6">
         <div>
-          <span className="text-xs font-medium text-olive-700 uppercase tracking-wider">
+          <span className="text-[11px] sm:text-xs font-medium text-olive-700 uppercase tracking-wider">
             Transparência &amp; Segurança
           </span>
-          <h1 className="mt-1 font-serif text-3xl sm:text-4xl font-medium text-charcoal-900">
+          <h1 className="mt-1 font-serif text-2xl sm:text-4xl font-medium text-charcoal-900 leading-tight">
             Política de Privacidade e Funcionamento dos Pedidos
           </h1>
         </div>
 
         <div className="space-y-5 text-sm sm:text-base text-charcoal-700 leading-relaxed">
           <section className="space-y-2">
-            <h2 className="font-serif text-2xl font-medium text-charcoal-900">
+            <h2 className="font-serif text-xl sm:text-2xl font-medium text-charcoal-900">
               1. Como funcionam os pedidos no site
             </h2>
             <p>
@@ -28,7 +28,7 @@ export const PrivacyPolicyPage: React.FC = () => {
           </section>
 
           <section className="space-y-2">
-            <h2 className="font-serif text-2xl font-medium text-charcoal-900">
+            <h2 className="font-serif text-xl sm:text-2xl font-medium text-charcoal-900">
               2. Diferença entre Pronta Entrega e Sob Encomenda
             </h2>
             <p>
@@ -40,7 +40,7 @@ export const PrivacyPolicyPage: React.FC = () => {
           </section>
 
           <section className="space-y-2">
-            <h2 className="font-serif text-2xl font-medium text-charcoal-900">
+            <h2 className="font-serif text-xl sm:text-2xl font-medium text-charcoal-900">
               3. Privacidade e Armazenamento Local
             </h2>
             <p>
@@ -49,7 +49,7 @@ export const PrivacyPolicyPage: React.FC = () => {
           </section>
 
           <section className="space-y-2">
-            <h2 className="font-serif text-2xl font-medium text-charcoal-900">
+            <h2 className="font-serif text-xl sm:text-2xl font-medium text-charcoal-900">
               4. Canais Oficiais de Contato
             </h2>
             <p>
